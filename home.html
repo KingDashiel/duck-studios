@@ -26,12 +26,12 @@
         .div1 {
             background-color: rgba(255,255,175,0.5);
             border-radius: 12px;
-            width: 85%; /* Slightly smaller width for phones */
+            width: 85%; /* Slightly smaller width for larger screens initially */
             max-width: 600px; /* Maximum width */
             height: auto; /* Auto height */
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start; /* Align items to the top */
             align-items: center;
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255,255,255,0.5);
@@ -48,13 +48,13 @@
         }
 
         .div1 h2 {
-            margin: 0;
+            margin: 10px 0 5px 0;
             line-height: 1.25;
             font-size: 2.2em; /* Smaller heading on phones */
         }
 
         .div1 h4 {
-            margin: 0;
+            margin: 0 0 10px 0;
             line-height: 1.25;
             font-size: 1em; /* Smaller text on phones */
         }
@@ -65,8 +65,10 @@
                 font-size: 6vw; /* Slightly smaller base font on phones */
             }
             .div1 {
-                width: 95%; /* Take up more width on smaller screens */
-                padding: 15px;
+                width: 90%; /* Slightly reduced width on phones */
+                max-width: none; /* Allow it to take up more relative space but still have some margin */
+                padding: 20px 15px; /* Adjust vertical and horizontal padding */
+                align-items: center;
             }
             .div1 img {
                 max-width: 70%; /* Adjust image size on phones */
@@ -74,9 +76,12 @@
             }
             .div1 h2 {
                 font-size: 1.8em; /* Further reduce heading size */
+                margin-top: 10px; /* Add some top margin */
+                margin-bottom: 5px; /* Reduce bottom margin */
             }
             .div1 h4 {
                 font-size: 0.9em; /* Further reduce text size */
+                margin-bottom: 10px; /* Add some bottom margin */
             }
         }
 
