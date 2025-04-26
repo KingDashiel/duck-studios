@@ -12,7 +12,7 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
-            font-family: Montserrat;
+            font-family: Varela Round;
             font-weight: 1000;
             font-size: 5vw; /* Responsive font size */
             color: white;
@@ -26,7 +26,7 @@
         .div1 {
             background-color: rgba(255,255,175,0.5);
             border-radius: 12px;
-            width: 80%; /* Responsive width */
+            width: 85%; /* Slightly smaller width for phones */
             max-width: 600px; /* Maximum width */
             height: auto; /* Auto height */
             display: flex;
@@ -42,7 +42,7 @@
         }
 
         .div1 img {
-            max-width: 80%; /* Responsive image width */
+            max-width: 60%; /* Smaller image on phones */
             height: auto;
             margin-bottom: 15px;
         }
@@ -50,29 +50,33 @@
         .div1 h2 {
             margin: 0;
             line-height: 1.25;
-            font-size: 3em; /* Relative font size */
+            font-size: 2.2em; /* Smaller heading on phones */
         }
 
         .div1 h4 {
             margin: 0;
             line-height: 1.25;
-            font-size: 1.5em; /* Relative font size */
+            font-size: 1em; /* Smaller text on phones */
         }
 
         /* Media queries for smaller screens */
         @media (max-width: 600px) {
             body {
-                font-size: 8vw; /* Adjust font size for smaller screens */
+                font-size: 6vw; /* Slightly smaller base font on phones */
             }
             .div1 {
                 width: 95%; /* Take up more width on smaller screens */
                 padding: 15px;
             }
+            .div1 img {
+                max-width: 70%; /* Adjust image size on phones */
+                margin-bottom: 10px; /* Less margin below image */
+            }
             .div1 h2 {
-                font-size: 2.5em;
+                font-size: 1.8em; /* Further reduce heading size */
             }
             .div1 h4 {
-                font-size: 1.2em;
+                font-size: 0.9em; /* Further reduce text size */
             }
         }
 
@@ -82,7 +86,16 @@
                 font-size: 4vw; /* Adjust font size for tablets */
             }
             .div1 {
-                width: 70%;
+                width: 75%; /* Slightly wider on tablets */
+            }
+            .div1 img {
+                max-width: 70%; /* Adjust image size on tablets */
+            }
+            .div1 h2 {
+                font-size: 2.5em; /* Adjust heading size on tablets */
+            }
+            .div1 h4 {
+                font-size: 1.2em; /* Adjust text size on tablets */
             }
         }
     </style>
